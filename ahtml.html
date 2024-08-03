@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bcss.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="Cjs.js"></script>
+</head>
+
+<body>
+        
+    
+        <div class="container">
+            <div>
+                
+            <input type="text" placeholder="Search your dream job..." style="color: #62BABB;"
+                class="searchBox" id="searchBox">
+
+            <button class="Clear" type="button" style="color: #62BABB;" >Clear</button>
+            </div>    
+            <br>
+            <div class="results"></div>
+            <br>
+
+
+            <h2>Add New Job Listing</h2>
+            <form id="addJobForm">
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name"><br>
+                    <label for="imgSrc">Image Source:</label><br>
+                    <input type="text" id="imgSrc" name="imgSrc"><br>
+                    <label for="jobTitle">Job Title:</label><br>
+                    <input type="text" id="jobTitle" name="jobTitle"><br>
+                    <label for="details">Details:</label><br>
+                    <input type="text" id="details" name="details"><br>
+                    <label for="tags">Tags (comma separated):</label><br>
+                    <input type="text" id="tags" name="tags"><br><br>
+                    <input type="submit" value="Submit">  
+            </form>
+
+             
+        </div>
+        
+</body>
+</html>

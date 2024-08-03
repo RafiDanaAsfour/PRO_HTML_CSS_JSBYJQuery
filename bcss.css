@@ -1,0 +1,185 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #EFFBFB;
+    /*عشان يضلو الايقونات البنص*/
+    display: flex;
+    justify-content: center;
+    background-image: url('5.png');
+    background-repeat: repeat-x;
+    /*background-attachment: fixed; تثبيت الخلفية*/
+    background-size:auto; 
+
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (min-width: 480px) {
+    body {
+        display: flex;
+        background-image: url('5.png');
+        background-repeat: repeat-x;
+        background-color: #EFFBFB;
+    }
+}
+/******************************************************/
+ /* Styles for responsive container */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 100px;
+    position: relative;/*تثبيت الازرار*/
+    justify-content: center; /* لضمان توسيط المحتوى داخل الحاوية إذا لزم الأمر */
+}
+  /* Styles for text input */
+.container input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    font-size: 1em;
+    border: 1px solid #f4f7f9;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    
+}
+
+  /* Styles for search button */
+.container button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 15px ;
+    border: none;
+    background-color: white;
+    border-radius: 0 4px 4px 0;
+
+    text-decoration: underline; 
+    padding-bottom: 3px; 
+    box-sizing: border-box;
+}
+
+
+
+/*****************************************************/
+/*1*/
+.results .listingsPhotosnape {
+
+    position: relative;
+    display: flex;
+    height: 200px;
+    align-items: center;
+    background-color: white;
+    margin-top:100px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow:  rgba(0,0,0,0.1);
+    width: 100%; /* تأكد من أن العنصر يملأ العرض بالكامل */
+    box-sizing: border-box; /* تأكد من أن الحشوة والحدود مدرجة في عرض العنصر */
+}
+.results .listingsPhotosnape.clore {
+
+    border-left: 6px solid #5CA2A0;}
+
+.firstList{
+    flex-direction: column;
+}
+
+
+
+.companyLogo {
+  float: left; /* تعيين العنصر للتمرير ليسار */
+  margin-right: 15px; /* تباعد من اليمين */
+  width: 100px; /* عرض */
+  height: 100px; /* طول */
+  border-radius: 50%; /* شكل دائري */
+  display: flex; /* استخدام flexbox لترتيب العناصر */
+  align-items: center; /* توسيط العناصر عموديًا */
+  object-fit: cover;
+}
+/*************************************************/
+.companyName {
+    color:#62BABB;
+    font-size:small;
+    font-weight: bold;
+}
+.tags {
+    white-space: nowrap;
+    display: flex;
+    gap: 10px;
+   
+}
+/*************************************************/
+.jobTitle1 h2 {
+    font-size:medium;
+    font-weight: bold;
+    margin: 15px 0;
+    color: #333;
+}
+
+.jobDetails1 {
+    font-size:small;
+    font-weight: bold;
+    display: flex;
+    gap: 10px;
+    color: #777;
+}
+/***************************************************/
+.tag {
+    background-color: #e5e7eb;
+    color: #5a5a5a;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.tag.new {
+    background-color: #62BABB;
+    border-radius: 20px;
+    color: white;
+    
+}
+
+.tag.featured {
+    background-color: #2C3A3A;
+    border-radius: 20px;
+    color: white;
+}
+
+
+
+.job-tags {
+    display: flex;
+    gap: 5px;
+    margin-top: 15px;
+    position: absolute; 
+    right: 10px; /* تثبيت الحاوية في أقصى اليمين */
+    align-items: center;
+
+}
+
+.job-tags .tag {
+    background-color: #eef3f8;
+    color: #62BABB;
+
+}
+/*******************************************************************************/
+.listingsAccount{
+    position: relative;
+    display: flex;
+    height: 200px;
+    align-items: center;
+    background-color: white;
+    margin-top:100px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow:  rgba(0,0,0,0.1);
+}
+
+
+
+.hidden {
+    display: none;
+}
